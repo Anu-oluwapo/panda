@@ -235,3 +235,13 @@ footer p {
     width: 12rem;
   }
 }
+
+@media (max-width: 1110px) {
+  .hero-imgs img {
+    width: 30rem;
+  }
+
+  .hero-text {
+    margin-top: 5rem;
+  }
+}
