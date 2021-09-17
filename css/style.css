@@ -24,6 +24,10 @@ light black: #191919
 html {
   font-size: 62.5%;
 }
+
+body {
+  overflow-x: hidden;
+}
 b {
   font-weight: 500;
 }
@@ -113,13 +117,20 @@ section {
 .hero-text {
   margin-top: 10rem;
 }
+
+.hero-imgs {
+  position: relative;
+}
+
 .hero-img-1 {
   position: absolute;
+  width: 42.4rem;
 }
 
 .hero-img-2 {
   position: absolute;
   transform: translate(-35%, 15%);
+  width: 42.4rem;
 }
 
 .second-text {
@@ -140,6 +151,10 @@ hr {
 .contact-text {
   margin-top: 3rem;
   padding-left: 15rem;
+}
+
+.third-section img {
+  width: 37rem;
 }
 
 footer {
@@ -169,4 +184,36 @@ footer p {
   font-weight: 600;
   font-size: 1.83rem;
   color: #fff;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 40%;
+  }
+
+  .second-text {
+    padding-left: 0;
+  }
+
+  .footer-logo img {
+    width: 10rem;
+  }
+
+  .footer-logo {
+    margin-left: 1rem;
+  }
+
+  html {
+    padding-left: 1rem;
+  }
+
+  .hero-imgs {
+    display: none;
+  }
 }
