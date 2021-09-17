@@ -6,7 +6,7 @@ black: #dcdcdc #0d0d0b
 light black: #191919
 
 */
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans&display=swap");
 
 @font-face {
@@ -99,6 +99,12 @@ span {
   font-size: 1.8rem;
 }
 
+.btn-panda:hover {
+  color: #fff;
+  background-color: #6f7b6a;
+  border: solid 1px #fff;
+}
+
 section {
   padding-top: 7rem;
   padding-bottom: 20rem;
@@ -134,4 +140,33 @@ hr {
 .contact-text {
   margin-top: 3rem;
   padding-left: 15rem;
+}
+
+footer {
+  background-color: #6f7b6a;
+}
+
+.footer-logo {
+  margin-left: 10rem;
+}
+
+.footer a {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #9ca3af;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  padding-bottom: 10rem;
+}
+
+footer p {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.83rem;
+  color: #fff;
 }
