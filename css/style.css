@@ -165,6 +165,10 @@ li {
   color: black;
 }
 
+.nav-link:hover {
+  color: #6f7b6a;
+}
+
 span {
   font-size: 1.8rem;
 }
