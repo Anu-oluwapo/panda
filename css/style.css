@@ -99,16 +99,65 @@ p {
 }
 
 .scrolling-wrapper::-webkit-scrollbar {
-  display: none;
+  height: 4px;
 }
 
-.scrolling-wrapper .cardd {
-  background-image: url(/assets/featured1.png);
+.scrolling-wrapper::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #000000;
+}
+.scrolling-wrapper::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+.scrolling-wrapper .card {
   width: 103.2rem;
   height: 64rem;
   display: inline-block;
   margin-right: 2rem;
-  background-size: cover;
+  position: relative;
+}
+
+.scrolling-wrapper .card .card-body {
+  width: 100%;
+  margin: 0;
+  padding-left: 5rem;
+  padding-bottom: 5rem;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.44861694677871145) 65%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  position: absolute;
+  z-index: 1000;
+}
+
+.scrolling-wrapper .card .card-body .card-title {
+  font-family: Roslindale;
+  font-style: normal;
+
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.scrolling-wrapper .card .card-body .card-subtitle {
+  font-family: Roslindale;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.scrolling-wrapper .card .card-body .card-text {
+  font-family: Roslindale;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
 }
 
 .scrolling-wrapper-2 {

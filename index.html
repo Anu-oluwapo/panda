@@ -11,9 +11,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css" />
 
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <script>
+        var view = $("#scrolling-wrapper");
+        var move = "100px";
+        var sliderLimit = -750;
+
+        $("#rightArrow").click(function () {
+
+            var currentPosition = parseInt(view.css("left"));
+            if (currentPosition >= sliderLimit) view.stop(false, true).animate({ left: "-=" + move }, { duration: 400 })
+
+        });
+
+        $("#leftArrow").click(function () {
+
+            var currentPosition = parseInt(view.css("left"));
+            if (currentPosition < 0) view.stop(false, true).animate({ left: "+=" + move }, { duration: 400 });
+
+        });
+    </script>
 
 
 </head>
@@ -69,18 +91,41 @@
 
     <section class="container featured-section mt-5">
 
-        <h3 class="mb-5">Featured Apartments</h3>
+        <div class="row">
+            <h3 class="mb-5">Featured Apartments <img id="rightArrow" src="/assets/arrow.svg"
+                    style="width: 6.4rem; margin-left: 20rem; cursor: pointer; " class="" alt="..."></h3>
 
-        <div class="scrolling-wrapper">
-            <div class="cardd">
-                <h2></h2>
+        </div>
+
+        <div class="scrolling-wrapper" id="scrolling-wrapper">
+            <div class="card">
+                <img src="/assets/featured1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Location</h4>
+                    <h5 class="card-subtitle mb-2 ">Location</h5>
+                    <p class="card-text text-light">Location</p>
+                </div>
             </div>
-            <div class="cardd">
-                <h2></h2>
+
+            <div class="card">
+                <img src="/assets/featured1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Location</h4>
+                    <h5 class="card-subtitle mb-2 ">Location</h5>
+                    <p class="card-text text-light">Location</p>
+                </div>
             </div>
-            <div class="cardd">
-                <h2></h2>
+
+            <div class="card">
+                <img src="/assets/featured1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Location</h4>
+                    <h5 class="card-subtitle mb-2 ">Location</h5>
+                    <p class="card-text text-light">Location</p>
+                </div>
             </div>
+
+
         </div>
     </section>
 
