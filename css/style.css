@@ -280,7 +280,7 @@ p {
   margin-left: 1rem;
 }
 
-.card {
+.cardd {
   width: 42rem;
   border: none;
   border-radius: 0%;
@@ -376,8 +376,8 @@ span {
 }
 
 section {
-  padding-top: 7rem;
-  padding-bottom: 20rem;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
 }
 
 .abt-hero-text {
@@ -507,6 +507,9 @@ footer p {
   .show2 {
     display: none;
   }
+  .fourth-text {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -541,7 +544,29 @@ footer p {
   }
 
   .btn-panda {
+    border: solid 1px black;
+    border-radius: 0%;
+    /* padding: 10px 20px; */
     width: 12rem;
+    font-size: 1.8rem;
+    align-items: center;
+  }
+
+  .btn-panda-body {
+    border: solid 1px black;
+    border-radius: 0%;
+    /* padding: 10px 20px; */
+    width: 10rem;
+    font-size: 1.8rem;
+    height: 5rem;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .team-img {
+    width: 90%;
   }
 }
 
